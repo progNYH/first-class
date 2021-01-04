@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+<header class="position-relative">
+    <div class="container ">
+        <div class="row ">
+            <div class="logo-block position-absolute d-none d-lg-block">
+                <a href="../index.html"><img src="../image/logo.jpg" alt="logo" class="img-fluid"></a>
+            </div>
+            <div class="nush-block position-absolute d-none d-lg-block">
+                <img src="../image/LogoNUSh.gif" alt="logo" class="img-fluid">
+            </div>
+            <nav class="menu ">
+                <ul>
+                    <li><a href="../index.html">головна</a></li>
+                    <li><a href="../nush.html">нуш</a></li>
+                    <li><a href="../metod.html">Методички</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="mt-5">
+    <div class="container">
+        <h3 class="mb-4"><b>Тиждень 10. Театр</b></h3>
+        <div>
+            <b>Дослідницькі / проблемні запитання</b>
+            <ul>
+                <li>Які бувають театри?</li>
+                <li>Навіщо нам театр? Чому люди ходять до театру?</li>
+                <li>Як поводитись у театрі?</li>
+                <li>Як створити театр тіней?</li>
+
+            </ul>
+            <b>Завдання для тижня</b>
+            <ol>
+                <li>Ознайомити дітей з театром як видом мистецтва, атрибутами, пов’язаними з театром.</li>
+                <li>Розвивати творчі здібності та емоційну чутливість.</li>
+                <li> Збагатити активний словник учнів новими словами.</li>
+                <li>Удосконалювати уміння рахувати в межах 10.</li>
+                <li>Сприяти дотриманню правил поведінки на вулиці, у театрі.</li>
+
+            </ol>
+
+            <div class="mb-3">
+                <b>Електронна версія підручника</b><br>
+                <a href="../books/week10.pdf" target="_blank">Сторінки електронного підручника  (Тиждень 10)</a>
+            </div>
+
+        </div>
+        <div class="mb-3">
+            <p><b>Як створюють ляльок-маріонеток  </b>(до с. 70-71 підручника)</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ov-zfiLqe44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+            <p><b>
+                Як швидко створити пальчикових ляльок   </b>(до с. 73 підручника)</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mbhlou-vMXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+            <p><b>Як створити ляльку з елементами, що рухаються, для тіньового театру </b>(до с. 77 підручника)</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pSVd_0AKTKc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="mb-3">
+            <p><b>Корисні завдання</b></p>
+            <p><b>Порівнюємо ціни на квитки, вирішуємо, куди йти з рідними</b></p>
+            <p>Завдання допоможе дитині розвинути логіко-математичне мислення у процесі вирішення життєвих ситуацій. Дитині пропонується розглянути ціни на різних квитках: до кінотеатру, цирку, театру. Після цього потрібно відповісти на декілька запитань: на скільки квиток до кінотеатру дорожчий за квиток до цирку, який квиток дешевший за всі інші, який квиток найдорожчий? Відповіді на запитання потрібно записати. Завдання також передбачає прийняття дитиною рішення про те, куди б їй хотілося піти разом з усією сім'єю й скільки грошей потрібно для цього (вирішити це потрібно, обговоривши питання з усіма членами родини). Пропоноване завдання розвиватиме громадянську й соціальну компетентність дитини.</p>
+            <img src="../image/img-week-10.JPG" class="img-fluid" alt=""> <br> <br>
+            <p><b></b></p>
+
+        </div>
+
+        <div class="game">
+            <p><b>
+                Казкова переплутанка   </b>(до с. 73 підручника)</p>
+            <p><i>Пригадуємо казки — відтворюємо послідовність подій</i></p>
+            <iframe id="frame" class="frame" style="border:0px;width:100%;height:100%" allowFullScreen webkitAllowFullScreen mozallowfullscreen src="" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+    </div>
+</section>
+
+
+
+<footer >
+    <p>  © 2020</p>
+</footer>
+<script type="text/javascript">
+
+    function setURLs(){
+        var d = document.getElementById("frame");
+        if(d) setURL(d);
+    }
+
+    var lastURL = "";
+    function setURL(d){
+        var url = '//learningapps.org/show.php?id=pfcr5756t18';
+        var iconurl = '//learningapps.org/icon?id=pfcr5756t18';
+        if(window.innerWidth <= 200) url = iconurl;
+        if(lastURL != url){
+            lastURL = url;
+            switch(window.location.protocol) {
+                case 'http:':
+                case 'https:':
+                    //remote file over http or https
+                    d.src = window.location.protocol + url;
+                    break;
+                case 'file:':
+                    //local file
+                    d.src = 'http:'+url;
+                    break;
+                default:
+                    //some other protocol
+                    d.src = 'http:'+url;
+            }
+        }
+    }
+
+    setURLs();
+
+
+
+    if(typeof window.addEventListener == "function") {
+        window.addEventListener("message", function(event){
+            var inner = document.getElementById("frame").contentWindow;
+            if(inner == event.source) return; // no loop back
+            inner.postMessage(event.data,"*");
+        }, false);
+        window.addEventListener("resize", function(event){
+            setURLs();
+        });
+    }
+</script>
+</body>
+</html>

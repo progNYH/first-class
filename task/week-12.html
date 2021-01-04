@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+<header class="position-relative">
+    <div class="container ">
+        <div class="row ">
+            <div class="logo-block position-absolute d-none d-lg-block">
+                <a href="../index.html"><img src="../image/logo.jpg" alt="logo" class="img-fluid"></a>
+            </div>
+            <div class="nush-block position-absolute d-none d-lg-block">
+                <img src="../image/LogoNUSh.gif" alt="logo" class="img-fluid">
+            </div>
+            <nav class="menu ">
+                <ul>
+                    <li><a href="../index.html">головна</a></li>
+                    <li><a href="../nush.html">нуш</a></li>
+                    <li><a href="../metod.html">Методички</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="mt-5">
+    <div class="container">
+        <h3 class="mb-4"><b>Тиждень 12. Вода</b></h3>
+        <div>
+            <b>Дослідницькі / проблемні запитання</b>
+            <ul>
+                <li>Де “живе” вода? Як вона мандрує?</li>
+                <li>Навіщо пити воду? Навіщо вона потрібна людям і природі?</li>
+                <li>Якою буває вода?</li>
+                <li>Що станеться, якщо її не буде?</li>
+                <li> Як берегти воду?</li>
+
+            </ul>
+            <b>Завдання для тижня</b>
+            <ol>
+                <li>Формувати уявлення про розподіл води на Землі.</li>
+                <li>Навчити досліджувати властивості води.</li>
+                <li> Формувати розуміння значення води для рослин, тварин, людини.</li>
+                <li>Виробляти навички економного використання води.</li>
+                <li>Формувати здоров’язбережну компетентність.</li>
+
+            </ol>
+
+            <div class="mb-3">
+                <b>Електронна версія підручника</b><br>
+                <a href="../books/week12.pdf" target="_blank">Сторінки електронного підручника  (Тиждень 12)</a>
+            </div>
+
+        </div>
+        <div class="mb-3">
+            <p><b>
+                Земля з космосу   </b>(до с. 88 підручника)</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uuY1RXZyUFs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+            <p><b>Розглянемо з малятами Землю з Космосу та відповідаємо на питання</b></p>
+            <ul>
+                <li>Чому саме нашу планету називають блакитною?
+                </li>
+                <li>Чому саме нашу планету називають блакитною?
+                </li>
+                <li>Які найбільші водойми на Землі? Скільки їх? </li>
+                <li>Чи знаєте, як називаються океани Землі? Чим вони відрізняються від морів? Річок?
+                    Як їх упізнати на фотографіях?
+                </li>
+                <li>Як зрозуміти, які гори вищі, а які нижчі?</li>
+                <li>Де можна знайти найбільше синього кольору?
+                </li>
+            </ul><br>
+            <p><b>Пустеля   </b>(до с. 89 підручника)</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tPSB6ajACwM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+            <p><b>Мультфільм “Казочка про Хмаринку. Кругообіг води у природі”   </b>(до с. 91 підручника)</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/g9zrExiuDHg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+<p><b>Буксирування айсберга   </b>(до с. 93 підручника)</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eOs-gSVvPWA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="game">
+            <p><b>Джерела прісної води   </b>(до с. 90 підручника)</p>
+            <p><i>Класифікуємо джерела води, більше дізнаємося про те, де можна знайти воду в природі та біля домівки</i></p>
+            <iframe id="frame" class="frame" style="border:0px;width:100%;height:100%" allowFullScreen webkitAllowFullScreen mozallowfullscreen src="" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+    </div>
+</section>
+
+
+
+<footer >
+    <p>  © 2020</p>
+</footer>
+<script type="text/javascript">
+
+    function setURLs(){
+        var d = document.getElementById("frame");
+        if(d) setURL(d);
+    }
+
+    var lastURL = "";
+    function setURL(d){
+        var url = '//learningapps.org/show.php?id=p0j9gzmbc18';
+        var iconurl = '//learningapps.org/icon?id=p0j9gzmbc18';
+        if(window.innerWidth <= 200) url = iconurl;
+        if(lastURL != url){
+            lastURL = url;
+            switch(window.location.protocol) {
+                case 'http:':
+                case 'https:':
+                    //remote file over http or https
+                    d.src = window.location.protocol + url;
+                    break;
+                case 'file:':
+                    //local file
+                    d.src = 'http:'+url;
+                    break;
+                default:
+                    //some other protocol
+                    d.src = 'http:'+url;
+            }
+        }
+    }
+
+    setURLs();
+
+
+
+    if(typeof window.addEventListener == "function") {
+        window.addEventListener("message", function(event){
+            var inner = document.getElementById("frame").contentWindow;
+            if(inner == event.source) return; // no loop back
+            inner.postMessage(event.data,"*");
+        }, false);
+        window.addEventListener("resize", function(event){
+            setURLs();
+        });
+    }
+</script>
+
+</body>
+</html>

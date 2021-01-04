@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+<header class="position-relative">
+    <div class="container ">
+        <div class="row ">
+            <div class="logo-block position-absolute d-none d-lg-block">
+                <a href="../index.html"><img src="../image/logo.jpg" alt="logo" class="img-fluid"></a>
+            </div>
+            <div class="nush-block position-absolute d-none d-lg-block">
+                <img src="../image/LogoNUSh.gif" alt="logo" class="img-fluid">
+            </div>
+            <nav class="menu ">
+                <ul>
+                    <li><a href="../index.html">головна</a></li>
+                    <li><a href="../nush.html">нуш</a></li>
+                    <li><a href="../metod.html">Методички</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="mt-5">
+    <div class="container">
+        <h3 class="mb-4"><b>Тиждень 18. Ми — мандрівники</b></h3>
+        <div>
+            <b>Дослідницькі / проблемні запитання</b>
+            <ul>
+                <li>Хто такий мандрівник?</li>
+                <li>Чи я назвати себе мандрівником?</li>
+                <li>Як мандрувати безпечно?</li>
+                <li>Як мандрувати світом, не засмічуючи довкілля?</li>
+
+            </ul>
+            <b>Завдання для тижня</b>
+            <ol>
+                <li>Ознайомити учнів з правилами безпеки під час подорожей.</li>
+                <li>Формувати вміння досліджувати.</li>
+                <li>Вчити класифікувати різноманітні об’єкти.</li>
+                <li>Вчити узагальнювати набуті знання, використовувати їх у повсякденному житті.</li>
+                <li>Виховувати дбайливе ставлення до природи.</li>
+
+            </ol>
+
+            <div class="mb-3">
+                <b>Електронна версія підручника</b><br>
+                <a href="../books/week18.pdf" target="_blank">Сторінки електронного підручника  (Тиждень 18)</a>
+            </div>
+
+        </div>
+        <div class="mb-3">
+            <p><b>Корисні завдання</b></p>
+            <p><b>
+                Хмари слів “Що потрібно для мандрівки”   </b>(до с. 11 підручника)</p>
+            <img src="../image/img-week-18.JPG" class="img-fluid" alt=""> <br> <br>
+            <img src="../image/img1-week-18.JPG" class="img-fluid" alt=""> <br> <br>
+            <img src="../image/img2-week-18.JPG" class="img-fluid" alt=""> <br> <br>
+            <p><b>Oзнайомлення з хмарами слів</b></p>
+            <ul>
+                <li>Роздивіться хмари слів і знайдіть знайомі букви.</li>
+                <li>Скільки слів ви знайшли у хмарі?</li>
+                <li>Знайдіть і прочитайте слова. Які з них ви знайшли одразу, а які довго шукали? Чому?</li>
+                <li>Чи багато слів ви змогли прочитати?</li>
+                <li>Що об’єднує зібрані у хмарі слова?</li>
+                <li>Закрийте хмару та спробуйте пригадати всі слова. Хто пригадав більше?</li>
+
+            </ul>
+        </div>
+
+        <div class="game">
+            <p><b>Подорож на полюси: Антарктида та Арктика   </b>(до с. 11 підручника)</p>
+            <p><i>Дивуємо малят — ознайомлюємо з рослинами і тваринами найхолодніших місць Землі</i></p>
+            <iframe id="frame" class="frame" style="border:0px;width:100%;height:100%" allowFullScreen webkitAllowFullScreen mozallowfullscreen src="" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+        <div class="game">
+            <p><b>
+                Кросворд “Ми — мандрівники”   </b>(до с. 14 підручника)</p>
+            <p><i>Знаходимо у хмарі букв слова — пояснюємо, чому саме вони увійшли у кросворд про подорожі</i></p>
+            <iframe id="frame1" class="frame" style="border:0px;width:100%;height:100%" allowFullScreen webkitAllowFullScreen mozallowfullscreen src="" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+    </div>
+</section>
+
+
+
+<footer >
+    <p>  © 2020</p>
+</footer>
+<script type="text/javascript">
+    function setURLs(){
+        var d = document.getElementById("frame");
+        if(d) setURL(d);
+    }
+
+    var lastURL = "";
+    function setURL(d){
+        var url = '//learningapps.org/show.php?id=p8p2jpsf517';
+        var iconurl = '//learningapps.org/icon?id=p8p2jpsf517';
+        if(window.innerWidth <= 200) url = iconurl;
+        if(lastURL != url){
+            lastURL = url;
+            switch(window.location.protocol) {
+                case 'http:':
+                case 'https:':
+                    //remote file over http or https
+                    d.src = window.location.protocol + url;
+                    break;
+                case 'file:':
+                    //local file
+                    d.src = 'http:'+url;
+                    break;
+                default:
+                    //some other protocol
+                    d.src = 'http:'+url;
+            }
+        }
+    }
+
+    setURLs();
+
+
+
+    if(typeof window.addEventListener == "function") {
+        window.addEventListener("message", function(event){
+            var inner = document.getElementById("frame").contentWindow;
+            if(inner == event.source) return; // no loop back
+            inner.postMessage(event.data,"*");
+        }, false);
+        window.addEventListener("resize", function(event){
+            setURLs();
+        });
+    }
+</script>
+<script type="text/javascript">
+
+    function setURLs(){
+        var d = document.getElementById("frame1");
+        if(d) setURL(d);
+    }
+
+    var lastURL = "";
+    function setURL(d){
+        var url = '//learningapps.org/show.php?id=px1ersch319';
+        var iconurl = '//learningapps.org/icon?id=px1ersch319';
+        if(window.innerWidth <= 200) url = iconurl;
+        if(lastURL != url){
+            lastURL = url;
+            switch(window.location.protocol) {
+                case 'http:':
+                case 'https:':
+                    //remote file over http or https
+                    d.src = window.location.protocol + url;
+                    break;
+                case 'file:':
+                    //local file
+                    d.src = 'http:'+url;
+                    break;
+                default:
+                    //some other protocol
+                    d.src = 'http:'+url;
+            }
+        }
+    }
+
+    setURLs();
+
+
+
+    if(typeof window.addEventListener == "function") {
+        window.addEventListener("message", function(event){
+            var inner = document.getElementById("frame").contentWindow;
+            if(inner == event.source) return; // no loop back
+            inner.postMessage(event.data,"*");
+        }, false);
+        window.addEventListener("resize", function(event){
+            setURLs();
+        });
+    }
+</script>
+</body>
+</html>

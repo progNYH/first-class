@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+<header class="position-relative">
+    <div class="container ">
+        <div class="row ">
+            <div class="logo-block position-absolute d-none d-lg-block">
+                <a href="../index.html"><img src="../image/logo.jpg" alt="logo" class="img-fluid"></a>
+            </div>
+            <div class="nush-block position-absolute d-none d-lg-block">
+                <img src="../image/LogoNUSh.gif" alt="logo" class="img-fluid">
+            </div>
+            <nav class="menu ">
+                <ul>
+                    <li><a href="../index.html">головна</a></li>
+                    <li><a href="../nush.html">нуш</a></li>
+                    <li><a href="../metod.html">Методички</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="mt-5">
+    <div class="container">
+        <h3 class="mb-4"><b>Тиждень 22. Транспорт</b></h3>
+        <div>
+            <b>Дослідницькі / проблемні запитання</b>
+            <ul>
+                <li>Який буває транспорт?</li>
+                <li>Як бути гарним пасажиром?</li>
+                <li>Для чого потрібні правила дорожнього руху?</li>
+                <li>Який транспорт найкращий?</li>
+                <li>Який транспорт є у моїй місцевості?</li>
+
+            </ul>
+            <b>Завдання для тижня</b>
+            <ol>
+                <li> Дослідити різні види транспорту, зокрема й ті, що є в рідній місцевості.</li>
+                <li>Поглибити знання дітей про правила дорожнього руху.</li>
+                <li>З’ясувати важливість правил користування транспортом.</li>
+                <li>Формувати екологічну свідомість учнів.</li>
+                <li>Навчати висловлювати свою думку, уважно слухати співразмовника, взаємодіяти з однокласниками.</li>
+
+
+            </ol>
+            <div class="mb-3">
+                <b>Електронна версія підручника</b><br>
+                <a href="../books/week22.pdf" target="_blank">Сторінки електронного підручника  (Тиждень 22)</a>
+            </div>
+        </div>
+        <div class="mb-3">
+            <p><b>Корисні завдання</b></p>
+            <p><b>Картки “Такий різний транспорт”  </b> (до с. 41 підручника)</p>
+            <p>Обноворіть їх</p>
+            <img src="../image/img-week-22.JPG" class="img-fluid" alt=""> <br> <br>
+            <img src="../image/img1-week-22.JPG" class="img-fluid" alt=""> <br> <br>
+            <img src="../image/img2-week-22.JPG" class="img-fluid" alt=""> <br> <br>
+            <img src="../image/img3-week-22.JPG" class="img-fluid" alt=""> <br> <br>
+        </div>
+        <div class="mb-3">
+            <p><b>Міжміський транспорт майбутнього   </b>(до с. 46 підручника)</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ON1j2TJCoQU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br><br><p><b>
+            Міський транспорт майбутнього   </b>(до с. 46 підручника)</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wPBAemjWkOc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+
+        <div class="game">
+            <p><b>Кросворд “Транспорт навколо нас“ </b>(до с. 41 підручника)</p>
+            <p><i>Дивуємо дітей незвичайним транспортом у різних країнах світу</i></p>
+            <iframe id="frame" class="frame" style="border:0px;width:100%;height:100%" allowFullScreen webkitAllowFullScreen mozallowfullscreen src="" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+        <div class="game">
+            <p><b>
+                Про що знаки говорять   </b>(до с. 42 підручника)</p>
+            <p><i>Вивчаємо знаки, які зустрічаються навколо, класифікуємо їх, розшифровуємо зміст</i></p>
+            <iframe id="frame1" class="frame" style="border:0px;width:100%;height:100%" allowFullScreen webkitAllowFullScreen mozallowfullscreen src="" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+    </div>
+</section>
+
+
+
+<footer >
+    <p>  © 2020</p>
+</footer>
+<script type="text/javascript">
+    function setURLs(){
+        var d = document.getElementById("frame");
+        if(d) setURL(d);
+    }
+
+    var lastURL = "";
+    function setURL(d){
+        var url = '//learningapps.org/show.php?id=p5070dc6219';
+        var iconurl = '//learningapps.org/icon?id=p5070dc6219';
+        if(window.innerWidth <= 200) url = iconurl;
+        if(lastURL != url){
+            lastURL = url;
+            switch(window.location.protocol) {
+                case 'http:':
+                case 'https:':
+                    //remote file over http or https
+                    d.src = window.location.protocol + url;
+                    break;
+                case 'file:':
+                    //local file
+                    d.src = 'http:'+url;
+                    break;
+                default:
+                    //some other protocol
+                    d.src = 'http:'+url;
+            }
+        }
+    }
+
+    setURLs();
+
+
+
+    if(typeof window.addEventListener == "function") {
+        window.addEventListener("message", function(event){
+            var inner = document.getElementById("frame").contentWindow;
+            if(inner == event.source) return; // no loop back
+            inner.postMessage(event.data,"*");
+        }, false);
+        window.addEventListener("resize", function(event){
+            setURLs();
+        });
+    }
+</script>
+<script type="text/javascript">
+    function setURLs(){
+        var d = document.getElementById("frame1");
+        if(d) setURL(d);
+    }
+
+    var lastURL = "";
+    function setURL(d){
+        var url = '//learningapps.org/show.php?id=p1ju1kg9k18';
+        var iconurl = '//learningapps.org/icon?id=p1ju1kg9k18';
+        if(window.innerWidth <= 200) url = iconurl;
+        if(lastURL != url){
+            lastURL = url;
+            switch(window.location.protocol) {
+                case 'http:':
+                case 'https:':
+                    //remote file over http or https
+                    d.src = window.location.protocol + url;
+                    break;
+                case 'file:':
+                    //local file
+                    d.src = 'http:'+url;
+                    break;
+                default:
+                    //some other protocol
+                    d.src = 'http:'+url;
+            }
+        }
+    }
+
+    setURLs();
+
+
+
+    if(typeof window.addEventListener == "function") {
+        window.addEventListener("message", function(event){
+            var inner = document.getElementById("frame").contentWindow;
+            if(inner == event.source) return; // no loop back
+            inner.postMessage(event.data,"*");
+        }, false);
+        window.addEventListener("resize", function(event){
+            setURLs();
+        });
+    }
+</script>
+</body>
+</html>

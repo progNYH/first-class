@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+<header class="position-relative">
+    <div class="container ">
+        <div class="row ">
+            <div class="logo-block position-absolute d-none d-lg-block">
+                <a href="../index.html"><img src="../image/logo.jpg" alt="logo" class="img-fluid"></a>
+            </div>
+            <div class="nush-block position-absolute d-none d-lg-block">
+                <img src="../image/LogoNUSh.gif" alt="logo" class="img-fluid">
+            </div>
+            <nav class="menu ">
+                <ul>
+                    <li><a href="../index.html">головна</a></li>
+                    <li><a href="../nush.html">нуш</a></li>
+                    <li><a href="../metod.html">Методички</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="mt-5">
+    <div class="container">
+        <h3 class="mb-4"><b>Тиждень 1. Я — школяр / школярка</b></h3>
+        <div>
+            <b>Дослідницькі / проблемні запитання</b>
+            <ul>
+                <li>Навіщо мені ходити до школи? Чого я очікую від шкільного життя?</li>
+                <li>Хто я? Хто мої однокласники?</li>
+                <li>Як мені безпечно дістатися до школи й повернутися додому?</li>
+                <li>Що покласти у шкільний ранець?</li>
+            </ul>
+            <b>Завдання першого тижня</b>
+            <ol>
+                <li>Створити умови для цікавого й радісного навчання.</li>
+                <li>Організувати знайомство учнів з однокласниками та вчителями.</li>
+                <li>Навчати активного слухання в умовах усного спілкування.</li>
+                <li>Навчати взаємодії в парах та групах.</li>
+                <li>Сприяти усвідомленню правил безпечної поведінки дорогою до навчального закладу та у школі.</li>
+                <li>Допомагати дітям ідентифікувати себе як учнів та мотивувати їх до навчання.</li>
+            </ol>
+
+            <div class="mb-3">
+                <b>Електронна версія підручника</b><br>
+                <a href="../books/week1.pdf" target="_blank">Сторінки електронного підручника  (Тиждень 1)</a>
+            </div>
+
+        </div>
+        <div class="game">
+            <p><b>Якої форми бувають знаки  (до с. 8 підручника)</b></p>
+            <iframe id="frame" class="frame" style="border:0px;width:100%;height:100%" allowFullScreen webkitAllowFullScreen mozallowfullscreen src="" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+
+        <div class="game">
+            <p><b>Знаки на дорогах та у магазинах  (до с. 8 підручника)</b></p>
+            <iframe id="frame2" class="frame" style="border:0px;width:100%;height:100%" allowFullScreen webkitAllowFullScreen mozallowfullscreen src="" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+        
+        <div>
+            Машини — наші незамінні помічники: допомагають швидко долати відстані, перевозити вантажі. Але необачному пішоходу вони можуть завдати шкоди. Аби не трапилось біди, треба добре знати правила безпеки на дорозі та дотримуватись їх. <br> <br>
+
+            <a href="../books/kartky.pdf" target="_blank">Cюжетні картки “Обережно: дорога!” (до с. 8 підручника)</a> <br><br>
+            Роздатковий матеріал для дидактичних ігор (додаток до журналу “Джміль” № 4, 2017)
+        </div>
+
+
+    </div>
+</section>
+
+
+
+<footer >
+    <p>  © 2020</p>
+</footer>
+<script type="text/javascript">
+
+    function setURLs(){
+        var d = document.getElementById("frame");
+        if(d) setURL(d);
+    }
+
+    var lastURL = "";
+    function setURL(d){
+        var url = '//learningapps.org/show.php?id=pqi6pyeb318';
+        var iconurl = '//learningapps.org/icon?id=pqi6pyeb318';
+        if(window.innerWidth <= 200) url = iconurl;
+        if(lastURL != url){
+            lastURL = url;
+            switch(window.location.protocol) {
+                case 'http:':
+                case 'https:':
+                    //remote file over http or https
+                    d.src = window.location.protocol + url;
+                    break;
+                case 'file:':
+                    //local file
+                    d.src = 'http:'+url;
+                    break;
+                default:
+                    //some other protocol
+                    d.src = 'http:'+url;
+            }
+        }
+    }
+
+    setURLs();
+</script>
+<script>
+    function setURLs(){
+        d = document.getElementById("frame2");
+        if(d) setURL(d);
+    }
+
+    var lastURL = "";
+    function setURL(d){
+        var url = '//learningapps.org/show.php?id=poaags62c18';
+        var iconurl = '//learningapps.org/icon?id=poaags62c18';
+        if(window.innerWidth <= 200) url = iconurl;
+        if(lastURL != url){
+            lastURL = url;
+            switch(window.location.protocol) {
+                case 'http:':
+                case 'https:':
+                    //remote file over http or https
+                    d.src = window.location.protocol + url;
+                    break;
+                case 'file:':
+                    //local file
+                    d.src = 'http:'+url;
+                    break;
+                default:
+                    //some other protocol
+                    d.src = 'http:'+url;
+            }
+        }
+    }
+
+    setURLs();
+</script>
+
+</body>
+</html>

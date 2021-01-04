@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+<header class="position-relative">
+    <div class="container ">
+        <div class="row ">
+            <div class="logo-block position-absolute d-none d-lg-block">
+                <a href="../index.html"><img src="../image/logo.jpg" alt="logo" class="img-fluid"></a>
+            </div>
+            <div class="nush-block position-absolute d-none d-lg-block">
+                <img src="../image/LogoNUSh.gif" alt="logo" class="img-fluid">
+            </div>
+            <nav class="menu ">
+                <ul>
+                    <li><a href="../index.html">головна</a></li>
+                    <li><a href="../nush.html">нуш</a></li>
+                    <li><a href="../metod.html">Методички</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="mt-5">
+    <div class="container">
+        <h3 class="mb-4"><b>Тиждень 19. Ми — винахідники</b></h3>
+        <div>
+            <b>Дослідницькі / проблемні запитання</b>
+            <ul>
+                <li>Хто такий винахідник?</li>
+                <li>Як народжуються винаходи?</li>
+                <li>Як природа допомагає винахідникам?</li>
+                <li>Чи можна бути винахідником у наш час?</li>
+
+            </ul>
+            <b>Завдання для тижня</b>
+            <ol>
+                <li>Вчити спостерігати за об’єктами навколишнього світу, робити висновки та узагальнення за результатами власних спостережень.</li>
+                <li>Вчити учнів досліджувати.</li>
+                <li>Ознайомити дітей з тим, як розвивати вміння, потрібні винахіднику.</li>
+                <li>Навчати висловлювати свою думку, уважно слухати співрозмовника, взаємодіяти з однокласниками.</li>
+
+            </ol>
+
+            <div class="mb-3">
+                <b>Електронна версія підручника</b><br>
+                <a href="../books/week19.pdf" target="_blank">Сторінки електронного підручника  (Тиждень 19)</a>
+            </div>
+
+        </div>
+        <div class="mb-3">
+            <p><b>Корисні завдання</b></p>
+            <p><b>Визначаємо, які числа розміщено в колах</b></p>
+            <img src="../image/img-week-19.JPG" class="img-fluid" alt=""> <br> <br>
+            <p>Це завдання допоможе дитині розвинути математичне мислення, увагу й кмітливість. Дитині пропонується розглянути, де розміщено числа в колах і відповісти на декілька запитань: які числа розміщено у всіх чотирьох колах одночасно, які числа розміщено у трьох колах одночасно, які числа є лише у двох колах, які числа є лише в якомусь одному колі? Виконуючи завдання, дитина розвиватиме логіко-математичні здібності, пізнавальну активність, учитиметься моделювати математичні ігри.</p>
+        </div>
+<div class="mb-3">
+    <p><b>
+        Багатовимірна головоломка   </b>(до с. 24 підручника)</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xzACu6Bey1w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+        <div class="game">
+            <p><b>
+                Кросворд "Винаходи навколо нас"   </b>(до с. 19 підручника)</p>
+            <p><i>Хмара букв, де заховані винаходи</i></p>
+            <iframe id="frame" class="frame" style="border:0px;width:100%;height:100%" allowFullScreen webkitAllowFullScreen mozallowfullscreen src="" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+        <div class="game">
+            <p><b>
+                Техніка: від минулого до сьогодення   </b>(до с. 18 підручника)</p>
+            <p><i>Складаємо ланцюжок, що показує, як змінювалися вже звичні нам прилади</i></p>
+            <iframe id="frame1" class="frame" style="border:0px;width:100%;height:100%" allowFullScreen webkitAllowFullScreen mozallowfullscreen src="" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+    </div>
+</section>
+
+
+
+<footer >
+    <p>  © 2020</p>
+</footer>
+<script type="text/javascript">
+
+    function setURLs(){
+        var d = document.getElementById("frame");
+        if(d) setURL(d);
+    }
+
+    var lastURL = "";
+    function setURL(d){
+        var url = '//learningapps.org/show.php?id=p0h3stsia19';
+        var iconurl = '//learningapps.org/icon?id=p0h3stsia19';
+        if(window.innerWidth <= 200) url = iconurl;
+        if(lastURL != url){
+            lastURL = url;
+            switch(window.location.protocol) {
+                case 'http:':
+                case 'https:':
+                    //remote file over http or https
+                    d.src = window.location.protocol + url;
+                    break;
+                case 'file:':
+                    //local file
+                    d.src = 'http:'+url;
+                    break;
+                default:
+                    //some other protocol
+                    d.src = 'http:'+url;
+            }
+        }
+    }
+
+    setURLs();
+
+
+
+    if(typeof window.addEventListener == "function") {
+        window.addEventListener("message", function(event){
+            var inner = document.getElementById("frame").contentWindow;
+            if(inner == event.source) return; // no loop back
+            inner.postMessage(event.data,"*");
+        }, false);
+        window.addEventListener("resize", function(event){
+            setURLs();
+        });
+    }
+</script>
+<script type="text/javascript">
+    function setURLs(){
+        var d = document.getElementById("frame1");
+        if(d) setURL(d);
+    }
+
+    var lastURL = "";
+    function setURL(d){
+        var url = '//learningapps.org/show.php?id=pwhwb197319';
+        var iconurl = '//learningapps.org/icon?id=pwhwb197319';
+        if(window.innerWidth <= 200) url = iconurl;
+        if(lastURL != url){
+            lastURL = url;
+            switch(window.location.protocol) {
+                case 'http:':
+                case 'https:':
+                    //remote file over http or https
+                    d.src = window.location.protocol + url;
+                    break;
+                case 'file:':
+                    //local file
+                    d.src = 'http:'+url;
+                    break;
+                default:
+                    //some other protocol
+                    d.src = 'http:'+url;
+            }
+        }
+    }
+
+    setURLs();
+
+
+
+    if(typeof window.addEventListener == "function") {
+        window.addEventListener("message", function(event){
+            var inner = document.getElementById("frame").contentWindow;
+            if(inner == event.source) return; // no loop back
+            inner.postMessage(event.data,"*");
+        }, false);
+        window.addEventListener("resize", function(event){
+            setURLs();
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+<header class="position-relative">
+    <div class="container ">
+        <div class="row ">
+            <div class="logo-block position-absolute d-none d-lg-block">
+                <a href="../index.html"><img src="../image/logo.jpg" alt="logo" class="img-fluid"></a>
+            </div>
+            <div class="nush-block position-absolute d-none d-lg-block">
+                <img src="../image/LogoNUSh.gif" alt="logo" class="img-fluid">
+            </div>
+            <nav class="menu ">
+                <ul>
+                    <li><a href="../index.html">головна</a></li>
+                    <li><a href="../nush.html">нуш</a></li>
+                    <li><a href="../metod.html">Методички</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="mt-5">
+    <div class="container">
+        <h3 class="mb-4"><b>Тиждень 14. Таємниці космосу</b></h3>
+        <div>
+            <b>Дослідницькі / проблемні запитання</b>
+            <ul>
+                <li>Що можна побачити в космосі?</li>
+                <li>Чому Земля — особлива планета?</li>
+                <li>Чи можливе на Землі життя без Сонця?</li>
+                <li>Як людина підкорює космос?</li>
+                <li>Як я уявляю інші планети?</li>
+
+            </ul>
+            <b>Завдання для тижня</b>
+            <ol>
+                <li>Вчити спостерігати за добовими змінами у природі.</li>
+                <li>Дослідити значення Сонця для життя на Землі.</li>
+                <li>Виявити причинно-наслідкові зв’язки між обертанням Землі навколо своєї осі та зміною частин доби.</li>
+                <li>Вчити досліджувати, класифікувати, узагальнювати набуті знання та використовувати їх у повсякденному житті.</li>
+                <li> Навчати висловлювати свою думку, уважно слухати співрозмовника, взаємодіяти з однокласниками.</li>
+
+            </ol>
+            <div class="mb-3">
+                <b>Електронна версія підручника</b><br>
+                <a href="../books/week14.pdf" target="_blank">Сторінки електронного підручника  (Тиждень 14)</a>
+            </div>
+
+        </div>
+        <div class="mb-3">
+            <p><b>Корисні завдання</b></p>
+            <a href="../books/Tyzhden-14-method_comment_01_104.pdf"><b>
+                Бесіда-подорож планетами Сонячної системи  </b></a>(до с. 104 підручника)
+            <a href="../books/Tyzhden-14-method_comment_01_106.pdf"><b><br><br>
+                Бесіда з малятами про нашу красуню — Землю   </b></a>(до с. 106 підручника)
+        </div>
+
+
+        <div class="game">
+            <p><b>Космічна мандрівка: Сонячна система   </b>(до с. 108 підручника)</p>
+            <p><i>Пізнавальне завдання здивує малят, захопить їх космічними пейзажами, а також допоможе відчути різницю між точною інформацією та здогадками</i></p>
+            <iframe id="frame" class="frame" style="border:0px;width:100%;height:100%" allowFullScreen webkitAllowFullScreen mozallowfullscreen src="" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+        <div class="game">
+            <br><p><b>
+                Вигадуємо назви космічних об'єктів   </b>(до с. 108 підручника)</p>
+            <p><i>Завдання-асоціація: роздивляємося космічні об'єкти, дивуємося, знаходимо цікаві асоціації, вправляємося у словотворенні</i></p>
+            <iframe id="frame1" class="frame" style="border:0px;width:100%;height:100%" allowFullScreen webkitAllowFullScreen mozallowfullscreen src="" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+    </div>
+</section>
+
+
+
+<footer >
+    <p>  © 2020</p>
+</footer>
+<script type="text/javascript">
+
+    function setURLs(){
+        var d = document.getElementById("frame");
+        if(d) setURL(d);
+    }
+
+    var lastURL = "";
+    function setURL(d){
+        var url = '//learningapps.org/show.php?id=p621v6pq218';
+        var iconurl = '//learningapps.org/icon?id=p621v6pq218';
+        if(window.innerWidth <= 200) url = iconurl;
+        if(lastURL != url){
+            lastURL = url;
+            switch(window.location.protocol) {
+                case 'http:':
+                case 'https:':
+                    //remote file over http or https
+                    d.src = window.location.protocol + url;
+                    break;
+                case 'file:':
+                    //local file
+                    d.src = 'http:'+url;
+                    break;
+                default:
+                    //some other protocol
+                    d.src = 'http:'+url;
+            }
+        }
+    }
+
+    setURLs();
+
+
+
+    if(typeof window.addEventListener == "function") {
+        window.addEventListener("message", function(event){
+            var inner = document.getElementById("frame").contentWindow;
+            if(inner == event.source) return; // no loop back
+            inner.postMessage(event.data,"*");
+        }, false);
+        window.addEventListener("resize", function(event){
+            setURLs();
+        });
+    }
+</script>
+<script type="text/javascript">
+
+    function setURLs(){
+        var d = document.getElementById("frame1");
+        if(d) setURL(d);
+    }
+
+    var lastURL = "";
+    function setURL(d){
+        var url = '//learningapps.org/show.php?id=p7o2a3qfa18';
+        var iconurl = '//learningapps.org/icon?id=p7o2a3qfa18';
+        if(window.innerWidth <= 200) url = iconurl;
+        if(lastURL != url){
+            lastURL = url;
+            switch(window.location.protocol) {
+                case 'http:':
+                case 'https:':
+                    //remote file over http or https
+                    d.src = window.location.protocol + url;
+                    break;
+                case 'file:':
+                    //local file
+                    d.src = 'http:'+url;
+                    break;
+                default:
+                    //some other protocol
+                    d.src = 'http:'+url;
+            }
+        }
+    }
+
+    setURLs();
+
+
+
+    if(typeof window.addEventListener == "function") {
+        window.addEventListener("message", function(event){
+            var inner = document.getElementById("frame").contentWindow;
+            if(inner == event.source) return; // no loop back
+            inner.postMessage(event.data,"*");
+        }, false);
+        window.addEventListener("resize", function(event){
+            setURLs();
+        });
+    }
+</script>
+</body>
+</html>

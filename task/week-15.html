@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+<header class="position-relative">
+    <div class="container ">
+        <div class="row ">
+            <div class="logo-block position-absolute d-none d-lg-block">
+                <a href="../index.html"><img src="../image/logo.jpg" alt="logo" class="img-fluid"></a>
+            </div>
+            <div class="nush-block position-absolute d-none d-lg-block">
+                <img src="../image/LogoNUSh.gif" alt="logo" class="img-fluid">
+            </div>
+            <nav class="menu ">
+                <ul>
+                    <li><a href="../index.html">головна</a></li>
+                    <li><a href="../nush.html">нуш</a></li>
+                    <li><a href="../metod.html">Методички</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="mt-5">
+    <div class="container">
+        <h3 class="mb-4"><b>Тиждень 15. Подарунки</b></h3>
+        <div>
+            <b>Дослідницькі / проблемні запитання</b>
+            <ul>
+                <li>Чому люди дарують подарунки?</li>
+                <li>Як дарувати і приймати подарунки?</li>
+                <li>Що я можу подарувати?</li>
+
+            </ul>
+            <b>Завдання для тижня</b>
+            <ol>
+                <li>Вчити добирати подарунки для близьких людей та знайомих.</li>
+                <li>Вчити дітей бути уважними до інших людей.</li>
+                <li>Виховувати здатність дітей до емпатії, спонукати приходити на допомогу іншим, коли це справді потрібно.</li>
+                <li>Вчити узагальнювати набуті знання та використовувати їх у повсякденному житті.</li>
+                <li>                Заохочувати дітей розповідати про власні враження, не соромитися власних почуттів, висловлювати судження про побачене і почуте, відтворювати це засобами мистецтва.
+                </li>
+
+            </ol>
+            <details>
+                <summary><span class="summary-title">Очікувані результати навчання</span></summary>
+                <i>Наприкінці тижня учні знатимуть:</i>
+                <ul>
+                    <li>як роблять іграшки;</li>
+                    <li>коли і як вручають подарунки;</li>
+                    <li>як приймати подарунки та дякувати за них;</li>
+                    <li>як вигадувати подарунки, враховуючи власні можливості;</li>
+
+                </ul>
+                <i>вмітимуть:</i>
+                <ul>
+                    <li>добирати та вручати подарунки рідним людям і приятелям;</li>
+                    <li>створювати подарунки відповідно до свята й охайно оформлювати їх;</li>
+                    <li>емоційно сприймати твори мистецтва, а також відтворювати свої враження під час образотворчої діяльності;</li>
+                    <li>висловлювати свої думки, не ображаючи інших;</li>
+                    <li>уважно слухати одне одного в умовах безпосереднього спілкування.</li>
+
+                </ul>
+            </details>
+
+            <div class="mb-3">
+                <b>Електронна версія підручника</b><br>
+                <a href="../books/week15.pdf" target="_blank">Сторінки електронного підручника  (Тиждень 15)</a>
+            </div>
+        </div>
+
+        <div class="game">
+            <p><b>
+                Вибираємо подарунок   </b>(до с. 116 підручника)</p>
+            <p><i>Завдання-розмірковування “Кому який подарунок найбільше сподобається?”</i></p>
+            <iframe id="frame" class="frame" style="border:0px;width:100%;height:100%" allowFullScreen webkitAllowFullScreen mozallowfullscreen src="" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+    </div>
+</section>
+
+
+
+<footer >
+    <p>  © 2020</p>
+</footer>
+<script type="text/javascript">
+
+    function setURLs(){
+        var d = document.getElementById("frame");
+        if(d) setURL(d);
+    }
+
+    var lastURL = "";
+    function setURL(d){
+        var url = '//learningapps.org/show.php?id=phknuhpa518';
+        var iconurl = '//learningapps.org/icon?id=phknuhpa518';
+        if(window.innerWidth <= 200) url = iconurl;
+        if(lastURL != url){
+            lastURL = url;
+            switch(window.location.protocol) {
+                case 'http:':
+                case 'https:':
+                    //remote file over http or https
+                    d.src = window.location.protocol + url;
+                    break;
+                case 'file:':
+                    //local file
+                    d.src = 'http:'+url;
+                    break;
+                default:
+                    //some other protocol
+                    d.src = 'http:'+url;
+            }
+        }
+    }
+
+    setURLs();
+
+
+
+    if(typeof window.addEventListener == "function") {
+        window.addEventListener("message", function(event){
+            var inner = document.getElementById("frame").contentWindow;
+            if(inner == event.source) return; // no loop back
+            inner.postMessage(event.data,"*");
+        }, false);
+        window.addEventListener("resize", function(event){
+            setURLs();
+        });
+    }
+</script>
+</body>
+</html>
